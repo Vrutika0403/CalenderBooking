@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\CalenderBooking.csproj": {}
+    "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\CalenderBooking.csproj": {
+    "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\CalenderBooking.csproj",
+        "projectUniqueName": "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj",
         "projectName": "CalenderBooking",
-        "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\CalenderBooking.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\obj\\",
+        "projectPath": "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/CalenderBooking/CalenderBooking/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -43,6 +46,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -59,6 +66,14 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.70, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Xunit": {
+              "target": "Package",
+              "version": "[2.7.1, )"
             }
           },
           "imports": [
@@ -72,12 +87,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[7.0.17, 7.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.17, 7.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }
