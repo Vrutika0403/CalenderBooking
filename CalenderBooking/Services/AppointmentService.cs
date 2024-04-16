@@ -30,7 +30,10 @@ namespace CalenderBooking.Services
         {
             return await _appointmentRepository.GetFreeTimeSlotsAsync(date);
         }
-
+        public async Task<List<Appointment>> GetAppointmentsByDateAsync(DateTime date)
+        {
+            return await _appointmentRepository.GetAppointmentsByDateAsync(date);
+        }
         public async Task KeepTimeSlotAsync(TimeSlot timeSlot)
         {
               // Validate the input time slot
@@ -75,5 +78,7 @@ namespace CalenderBooking.Services
             }
 
                 }
+
+      
     }       
 }

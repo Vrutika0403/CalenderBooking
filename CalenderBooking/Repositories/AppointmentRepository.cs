@@ -40,7 +40,7 @@ namespace CalenderBooking.Repositories
                 startTime = startTime.AddMinutes(30);
             }
 
-            return freeSlots;
+            return freeSlots; 
         }
 
         public async Task AddAppointmentAsync(Appointment appointment)
@@ -48,10 +48,14 @@ namespace CalenderBooking.Repositories
             _dbContext.Appointments.Add(appointment);
             await _dbContext.SaveChangesAsync();
         }
-
+        public async Task<List<Appointment>> GetAppointmentsByDateAsync(DateTime dateTime)
+        {
+            return await _dbContext.Appointments.Where(a => a.DateTime == dateTime).ToListAsync();
+        }
         public async Task DeleteAppointmentAsync(Appointment appointment)
         {
-            _dbContext.Appointments.Remove(appointment);
+           
+             _dbContext.Appointments.Remove(appointment);
             await _dbContext.SaveChangesAsync();
         }
                 

@@ -11,5 +11,6 @@ namespace CalenderBooking.Services
         Task DeleteAppointmentAsync(Appointment appointment);
         Task<List<TimeSlot>> GetFreeTimeSlotsAsync(DateTime date);
         Task KeepTimeSlotAsync(TimeSlot timeSlot);
+        Task<List<Appointment>> GetAppointmentsByDateAsync(DateTime dateTime);
     }
 }

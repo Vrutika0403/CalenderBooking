@@ -30,6 +30,15 @@ namespace CalenderBooking
         await HandleCommandLineInput(appointmentService);
         
         }  
+        private static async Task DeleteAppointmentsByDate(IAppointmentService appointmentService, DateTime date)
+        {
+            var appointments = await appointmentService.GetAppointmentsByDateAsync(date);
+            foreach (var appointment in appointments)
+            {
+                await appointmentService.DeleteAppointmentAsync(appointment);
+                Console.WriteLine($"Appointment on {appointment.DateTime.ToString("dd/MM/yyyy HH:mm")} has been deleted.");
+            }
+        }
         private static async Task HandleCommandLineInput(IAppointmentService appointmentService)
         {
             while (true)
@@ -43,21 +52,22 @@ namespace CalenderBooking
                         Console.Write("Enter date (DD/MM) and time (hh:mm): ");
                         var dateTimeInput = Console.ReadLine();
                         var dateTime = DateTime.ParseExact(dateTimeInput, "dd/MM HH:mm", null);
-                        await appointmentService.AddAppointmentAsync(new Appointment { DateTime = dateTime });
+                        await appointmentService.AddAppointmentAsync(new Appointment { DateTime = dateTime, Duration = TimeSpan.FromMinutes(30)});
                         Console.WriteLine("Appointment added successfully.");
                         break;
                     case "DELETE":
                         Console.Write("Enter date (DD/MM) and time (hh:mm): ");
                         dateTimeInput = Console.ReadLine();
-                        dateTime = DateTime.ParseExact(dateTimeInput, "dd/MM HH:mm", null);
-                        await appointmentService.DeleteAppointmentAsync(new Appointment { DateTime = dateTime });
+                        var date = DateTime.ParseExact(dateTimeInput, "dd/MM HH:mm", null);
+                        await DeleteAppointmentsByDate(appointmentService, date);
+                        //await appointmentService.DeleteAppointmentsByDate(new Appointment { DateTime = dateTime });
                         Console.WriteLine("Appointment deleted successfully.");
                         break;
                     case "FIND":
                         Console.Write("Enter date (DD/MM): ");
                         var dateInput = Console.ReadLine();
-                        var date = DateTime.ParseExact(dateInput, "dd/MM", null);
-                        var freeTimeSlots = await appointmentService.GetFreeTimeSlotsAsync(date);
+                        var date1 = DateTime.ParseExact(dateInput, "dd/MM", null);
+                        var freeTimeSlots = await appointmentService.GetFreeTimeSlotsAsync(date1);
                         Console.WriteLine("Free time slots:");
                         foreach (var timeslots in freeTimeSlots)
                         {
@@ -66,10 +76,10 @@ namespace CalenderBooking
                         break;
                     case "KEEP":
                         Console.Write("Enter time (hh:mm): ");
-                        var timeInput = Console.ReadLine();
-                        var timeslot = TimeSpan.ParseExact(timeInput, "hh\\:mm", null);
-                    
-                       // await appointmentService.KeepTimeSlotAsync(timeslot);
+                        var timeInput = Console.ReadLine();         
+                        var timeslot = DateTime.ParseExact(timeInput, "HH:mm", null);
+                        var timeSlotObject = new TimeSlot { StartTime = timeslot };
+                        await appointmentService.KeepTimeSlotAsync(timeSlotObject);
                         Console.WriteLine("Time slot kept successfully.");
                         break;
                     default:

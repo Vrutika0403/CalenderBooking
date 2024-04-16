@@ -4723,11 +4723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Exam\\CalenderBooking\\calenderbooking\\CalenderBooking.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\CalenderBooking.csproj",
       "projectName": "CalenderBooking",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Exam\\CalenderBooking\\calenderbooking\\CalenderBooking.csproj",
+      "projectPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\CalenderBooking.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Exam\\CalenderBooking\\calenderbooking\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\OneDrive\\Desktop\\CodingTest\\CalenderBooking\\CalenderBooking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

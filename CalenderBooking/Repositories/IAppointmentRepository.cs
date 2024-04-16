@@ -11,5 +11,6 @@ namespace CalenderBooking.Repositories
         Task<List<TimeSlot>> GetFreeTimeSlotsAsync(DateTime date);
         Task AddAppointmentAsync(Appointment appointment);
         Task DeleteAppointmentAsync(Appointment appointment);
+        Task<List<Appointment>> GetAppointmentsByDateAsync(DateTime dateTime);
     }
 }
