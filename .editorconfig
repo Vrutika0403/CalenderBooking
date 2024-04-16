@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 [*.cs]
 
 # CS8604: Possible null reference argument.
 dotnet_diagnostic.CS8604.severity = none
+=======
+[*.cs]
+
+# CS8604: Possible null reference argument.
+dotnet_diagnostic.CS8604.severity = none
+>>>>>>> fe3cb9e49c30aa350ae238b214263add581a050f
