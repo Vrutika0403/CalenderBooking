@@ -2,11 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xunit;
+using Moq;
 using Microsoft.EntityFrameworkCore;
 using CalenderBooking.Models;
 using CalenderBooking.Repositories;
+using CalenderBooking.Database;
+using Microsoft.EntityFrameworkCore.InMemory;
 
-namespace CalenderBooking.Tests
+namespace CalenderBooking.UnitTesting
 {
     public class AppointmentRepositoryTests
     {
@@ -44,7 +47,7 @@ namespace CalenderBooking.Tests
                 .UseInMemoryDatabase(databaseName: "TestDatabase")
                 .Options;
 
-            using (var context = new CalendarAppDbContext(options))
+            using (var context = new CalenderBookingDbContext(options))
             {
                 var repository = new AppointmentRepository(context);
                 var appointment = new Appointment { DateTime = new DateTime(2023, 4, 15, 10, 0, 0) };
@@ -81,7 +84,7 @@ namespace CalenderBooking.Tests
             }
         }
 
-          [Fact]
+        [Fact]
         public async Task GetAppointmentsByDateAsync_ShouldReturnAppointments()
         {
             // Arrange
@@ -109,7 +112,7 @@ namespace CalenderBooking.Tests
             }
         }
 
-          [Fact]
+        [Fact]
         public async Task DeleteAppointmentAsync_ShouldDeleteAppointment()
         {
             // Arrange
@@ -132,3 +135,5 @@ namespace CalenderBooking.Tests
                 Assert.Null(result);
             }
         }
+    }
+}

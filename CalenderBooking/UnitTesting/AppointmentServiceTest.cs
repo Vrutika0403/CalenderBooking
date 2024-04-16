@@ -6,7 +6,7 @@ using CalenderBooking.Models;
 using CalenderBooking.Repositories;
 using CalenderBooking.Services;
 
-namespace CaleCalenderBookingndarApp.Tests
+namespace CalenderBooking.UnitTesting
 {
     public class AppointmentServiceTests
     {
@@ -74,9 +74,7 @@ namespace CaleCalenderBookingndarApp.Tests
             // Act
             await appointmentService.KeepTimeSlotAsync(timeSlot);
 
-            // Assert
-            // Implement the test for KeepTimeSlotAsync method
-            // You can mock the necessary dependencies and verify the expected behavior
+            
         }
 
         [Fact]
