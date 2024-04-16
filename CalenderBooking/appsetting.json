@@ -1,0 +1,5 @@
+{
+    "ConnectionStrings": {
+     "CalenderBookingConnectionString": "Server=(localdb)\\MSSQLLocalDB;Database=CalendarBooking;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+}
