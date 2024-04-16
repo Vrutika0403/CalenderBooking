@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj": {}
+    "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj": {}
   },
   "projects": {
-    "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj": {
+    "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj",
         "projectName": "CalenderBooking",
-        "projectPath": "/workspaces/CalenderBooking/CalenderBooking/CalenderBooking.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/CalenderBooking/CalenderBooking/obj/",
+        "projectPath": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -73,7 +70,7 @@
             },
             "Xunit": {
               "target": "Package",
-              "version": "[2.7.1, )"
+              "version": "[2.4.2, )"
             }
           },
           "imports": [
@@ -87,26 +84,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[7.0.17, 7.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.17, 7.0.17]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

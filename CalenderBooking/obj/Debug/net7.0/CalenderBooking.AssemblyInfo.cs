@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CalenderBooking")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a72d6db5518c9a32bb50fb3d318976c768d9658")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CalenderBooking")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CalenderBooking")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,6 +5,7 @@ using Moq;
 using CalenderBooking.Models;
 using CalenderBooking.Repositories;
 using CalenderBooking.Services;
+using Microsoft.EntityFrameworkCore.InMemory;
 
 namespace CalenderBooking.UnitTesting
 {
