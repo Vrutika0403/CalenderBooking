@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj": {}
+    "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\CalenderBooking.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj": {
+    "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\CalenderBooking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\CalenderBooking.csproj",
         "projectName": "CalenderBooking",
-        "projectPath": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj",
+        "projectPath": "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\CalenderBooking.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

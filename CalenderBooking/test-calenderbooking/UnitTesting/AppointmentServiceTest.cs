@@ -6,12 +6,13 @@ using CalenderBooking.Models;
 using CalenderBooking.Repositories;
 using CalenderBooking.Services;
 using Microsoft.EntityFrameworkCore.InMemory;
-
-namespace CalenderBooking.UnitTesting
+using CalenderBooking;
+namespace test_calenderbooking
 {
-    public class AppointmentServiceTests
-    {
-        [Fact]
+
+public class AppointmentServiceTests
+{
+    [Fact]
         public async Task AddAppointmentAsync_ShouldAddAppointment()
         {
             // Arrange

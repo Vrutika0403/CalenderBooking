@@ -2750,10 +2750,14 @@
       "xunit.abstractions/2.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/xunit.abstractions.dll": {}
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/xunit.abstractions.dll": {}
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "xunit.analyzers/1.0.0": {
@@ -8633,11 +8637,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\CalenderBooking.csproj",
       "projectName": "CalenderBooking",
-      "projectPath": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\CalenderBooking.csproj",
+      "projectPath": "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\CalenderBooking.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\CalenderBooking-1\\calenderBooking\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\CalenderBooking-2\\calenderBooking\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
